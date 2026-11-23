@@ -53,6 +53,7 @@ app.include_router(ai.router)
 app.include_router(analytics.router)
 app.include_router(admin.router)
 
+@app.get("/api")
 @app.get("/")
 async def root():
     return {
