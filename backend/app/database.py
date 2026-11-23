@@ -46,10 +46,13 @@ class LocalJSONCollection:
         self._ensure_file()
 
     def _ensure_file(self):
-        os.makedirs(os.path.dirname(self.filepath), exist_ok=True)
-        if not os.path.exists(self.filepath):
-            with open(self.filepath, "w", encoding="utf-8") as f:
-                json.dump([], f, indent=2)
+        try:
+            os.makedirs(os.path.dirname(self.filepath), exist_ok=True)
+            if not os.path.exists(self.filepath):
+                with open(self.filepath, "w", encoding="utf-8") as f:
+                    json.dump([], f, indent=2)
+        except Exception as e:
+            print(f"[!] Warning: Unable to ensure file {self.filepath}: {e}")
 
     def _read_data(self) -> List[Dict[str, Any]]:
         try:
@@ -59,8 +62,11 @@ class LocalJSONCollection:
             return []
 
     def _write_data(self, data: List[Dict[str, Any]]):
-        with open(self.filepath, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, default=str)
+        try:
+            with open(self.filepath, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, default=str)
+        except Exception as e:
+            print(f"[!] Warning: Unable to write data to {self.filepath}: {e}")
 
     def _matches(self, doc: Dict[str, Any], filter_dict: Optional[Dict[str, Any]]) -> bool:
         if not filter_dict:

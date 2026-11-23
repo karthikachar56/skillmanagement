@@ -132,8 +132,23 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
         </div>
 
         {error && (
-          <div className="bg-rose-50 border border-rose-200 text-rose-700 text-xs p-3 rounded-xl font-medium">
-            {error}
+          <div className="bg-rose-50 border border-rose-200 text-rose-700 text-xs p-3.5 rounded-xl font-medium space-y-2">
+            <p>{error}</p>
+            {mode === 'signup' && (error.toLowerCase().includes('already exists') || error.toLowerCase().includes('sign in')) && (
+              <button
+                type="button"
+                onClick={() => {
+                  setMode('login');
+                  setLoginEmail(email || 'achar659@gmail.com');
+                  setLoginPassword('password123');
+                  setError('');
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-indigo-600 text-white rounded-lg text-xs font-bold hover:bg-indigo-700 transition shadow-xs cursor-pointer"
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                <span>Switch to Sign In (Auto-fill: {email || 'achar659@gmail.com'})</span>
+              </button>
+            )}
           </div>
         )}
 

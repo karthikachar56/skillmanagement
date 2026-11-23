@@ -12,7 +12,10 @@ async def register(user_data: UserCreate):
     users_col = db_manager.get_collection("users")
     existing = await users_col.find_one({"email": user_data.email.lower()})
     if existing:
-        raise HTTPException(status_code=400, detail="An account with this email already exists")
+        raise HTTPException(
+            status_code=400, 
+            detail="An account with this email already exists. Please switch to the Sign In tab (default password: password123)."
+        )
 
     user_id = str(uuid.uuid4())
     doc = {
@@ -36,7 +39,10 @@ async def register(user_data: UserCreate):
         "title": user_data.title or ("Mentor" if user_data.role == "faculty" else None),
         "created_at": datetime.utcnow().isoformat()
     }
-    await users_col.insert_one(doc)
+    try:
+        await users_col.insert_one(doc)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Registration failed: {str(e)}")
     
     token = create_access_token({"sub": user_id, "role": doc["role"]})
     return {
