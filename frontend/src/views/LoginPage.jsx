@@ -143,17 +143,17 @@ export default function LoginPage() {
 
         {/* Right Column: Authentication Card */}
         <div className="lg:col-span-6 max-w-md w-full mx-auto">
-          <div className="bg-slate-900/95 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800 space-y-6 backdrop-blur-md">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 space-y-6">
             
             {/* Header Tabs: Sign In / Sign Up */}
-            <div className="flex bg-slate-950 p-1.5 rounded-2xl text-xs font-bold border border-slate-800">
+            <div className="flex bg-slate-100 p-1.5 rounded-2xl text-xs font-bold">
               <button
                 type="button"
                 onClick={() => { setMode('login'); setError(''); }}
                 className={`flex-1 py-2.5 rounded-xl transition flex items-center justify-center gap-2 ${
                   mode === 'login'
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30 font-extrabold'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-white text-indigo-700 shadow-sm font-extrabold'
+                    : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <LogIn className="w-4 h-4" />
@@ -164,8 +164,8 @@ export default function LoginPage() {
                 onClick={() => { setMode('signup'); setError(''); }}
                 className={`flex-1 py-2.5 rounded-xl transition flex items-center justify-center gap-2 ${
                   mode === 'signup'
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30 font-extrabold'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-white text-indigo-700 shadow-sm font-extrabold'
+                    : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <UserPlus className="w-4 h-4" />

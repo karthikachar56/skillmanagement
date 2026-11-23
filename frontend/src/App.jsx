@@ -56,7 +56,7 @@ function MainLayout() {
 
   // 3. Authenticated: Show the Normal Application (Peoples page, navigation, sliding dashboard)
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col justify-between selection:bg-indigo-500 selection:text-white text-slate-100">
+    <div className="min-h-screen bg-slate-50 flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
       <div>
         <Navbar 
           activeTab={activeTab} 

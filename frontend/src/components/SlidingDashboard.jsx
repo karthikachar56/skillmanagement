@@ -129,17 +129,17 @@ export default function SlidingDashboard({
 
       {/* Slide-out Drawer Panel */}
       <div className="absolute inset-y-0 left-0 max-w-full flex">
-        <div className="w-screen max-w-md bg-slate-900 border-r border-slate-800 shadow-2xl flex flex-col justify-between transform transition-all ease-in-out duration-300">
+        <div className="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between transform transition-all ease-in-out duration-300">
           {/* Top Header */}
-          <div className="p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950 text-white">
+          <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-slate-900 text-white">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-sky-400 flex items-center justify-center text-white shadow-md">
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="font-extrabold text-base tracking-tight text-white">SkillBridge</span>
-                  <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-400/30">
+                  <span className="font-extrabold text-base tracking-tight">SkillBridge</span>
+                  <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-indigo-500/30 text-indigo-300 border border-indigo-400/40">
                     Dashboard
                   </span>
                 </div>
@@ -157,25 +157,25 @@ export default function SlidingDashboard({
           </div>
 
           {/* User Profile Card Snippet */}
-          <div className="p-4 bg-slate-950/70 border-b border-slate-800">
+          <div className="p-4 bg-gradient-to-r from-indigo-50 to-slate-50 border-b border-slate-200">
             {user ? (
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 min-w-0">
                   <img
                     src={user.avatar || `https://api.dicebear.com/7.x/bottts/svg?seed=${user.name}`}
                     alt={user.name}
-                    className="w-11 h-11 rounded-2xl object-cover ring-2 ring-indigo-500/40 shrink-0"
+                    className="w-11 h-11 rounded-2xl object-cover ring-2 ring-indigo-200 shrink-0"
                   />
                   <div className="min-w-0">
-                    <h3 className="font-bold text-sm text-white truncate">{user.name}</h3>
-                    <p className="text-xs text-slate-400 truncate">{user.email}</p>
+                    <h3 className="font-bold text-sm text-slate-900 truncate">{user.name}</h3>
+                    <p className="text-xs text-slate-500 truncate">{user.email}</p>
                     <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-[10px] font-bold uppercase px-2 py-0.2 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">
+                      <span className="text-[10px] font-bold uppercase px-2 py-0.2 rounded-full bg-indigo-100 text-indigo-800">
                         {user.role}
                       </span>
                       {user.whatsapp && (
-                        <span className="text-[10px] text-emerald-400 font-semibold flex items-center gap-0.5">
-                          <WhatsAppIcon className="w-3 h-3 text-emerald-400" />
+                        <span className="text-[10px] text-emerald-700 font-semibold flex items-center gap-0.5">
+                          <WhatsAppIcon className="w-3 h-3 text-emerald-600" />
                           <span>Linked</span>
                         </span>
                       )}
@@ -185,7 +185,7 @@ export default function SlidingDashboard({
 
                 <button
                   onClick={() => handleSelectPage('profile')}
-                  className="px-3 py-1.5 rounded-xl bg-slate-800 border border-slate-700 hover:border-indigo-400 text-xs font-bold text-slate-200 hover:text-indigo-300 shadow-2xs shrink-0"
+                  className="px-3 py-1.5 rounded-xl bg-white border border-slate-200 hover:border-indigo-300 text-xs font-bold text-slate-700 hover:text-indigo-600 shadow-2xs shrink-0"
                 >
                   View & Edit Profile
                 </button>
@@ -193,12 +193,12 @@ export default function SlidingDashboard({
             ) : (
               <div className="flex items-center justify-between">
                 <div>
-                  <h4 className="font-bold text-sm text-white">Guest User</h4>
-                  <p className="text-xs text-slate-400">Sign in to access full features</p>
+                  <h4 className="font-bold text-sm text-slate-900">Guest User</h4>
+                  <p className="text-xs text-slate-500">Sign in to access full features</p>
                 </div>
                 <button
                   onClick={() => { onClose(); onOpenAuth('login'); }}
-                  className="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-xs"
+                  className="px-3 py-1.5 rounded-xl bg-indigo-600 text-white text-xs font-bold shadow-xs"
                 >
                   Sign In
                 </button>
@@ -289,11 +289,11 @@ export default function SlidingDashboard({
           </div>
 
           {/* Bottom Actions Footer */}
-          <div className="p-4 border-t border-slate-800 bg-slate-950">
+          <div className="p-4 border-t border-slate-100 bg-slate-50">
             {user ? (
               <button
                 onClick={() => { logout(); onClose(); }}
-                className="w-full py-2.5 px-3 rounded-xl bg-rose-950/40 hover:bg-rose-900/50 text-rose-300 border border-rose-800/60 text-xs font-semibold flex items-center justify-center gap-2 transition"
+                className="w-full py-2.5 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-semibold flex items-center justify-center gap-2 transition"
               >
                 <LogOut className="w-4 h-4" />
                 <span>Sign Out</span>
