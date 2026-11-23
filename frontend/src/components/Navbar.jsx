@@ -39,14 +39,14 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
   };
 
   const roleColors = {
-    student: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-    faculty: 'bg-indigo-100 text-indigo-800 border-indigo-300',
-    recruiter: 'bg-amber-100 text-amber-800 border-amber-300',
-    admin: 'bg-rose-100 text-rose-800 border-rose-300',
+    student: 'bg-emerald-950/80 text-emerald-300 border-emerald-800',
+    faculty: 'bg-indigo-950/80 text-indigo-300 border-indigo-800',
+    recruiter: 'bg-amber-950/80 text-amber-300 border-amber-800',
+    admin: 'bg-rose-950/80 text-rose-300 border-rose-800',
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-xs">
+    <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800 shadow-lg shadow-black/20">
       {/* Main Header Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-3">
@@ -55,10 +55,10 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
           <div className="flex items-center gap-3">
             <button
               onClick={onOpenDashboard}
-              className="p-2.5 rounded-xl bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 text-slate-700 transition flex items-center gap-2 font-bold text-xs border border-slate-200 shadow-2xs relative"
+              className="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 hover:text-indigo-400 text-slate-200 transition flex items-center gap-2 font-bold text-xs border border-slate-700 shadow-2xs relative"
               title="Open Sliding Dashboard Menu"
             >
-              <Menu className="w-5 h-5 text-indigo-600" />
+              <Menu className="w-5 h-5 text-indigo-400" />
               <span className="font-extrabold text-xs hidden sm:inline">Dashboard Menu</span>
               {pendingCount > 0 && (
                 <span className="px-1.5 py-0.2 rounded-full bg-amber-500 text-white text-[10px] font-black animate-pulse">
@@ -71,13 +71,13 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
               onClick={() => setActiveTab('discovery')}
               className="flex items-center gap-2 cursor-pointer group shrink-0"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-sky-400 flex items-center justify-center text-white shadow-md shadow-indigo-200 group-hover:scale-105 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform">
                 <GraduationCap className="w-5 h-5" />
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="font-extrabold text-base tracking-tight text-slate-900">SkillBridge</span>
-                  <span className="text-[10px] uppercase font-bold px-1.5 py-0.2 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">SSMS</span>
+                  <span className="font-extrabold text-base tracking-tight text-white">SkillBridge</span>
+                  <span className="text-[10px] uppercase font-bold px-1.5 py-0.2 rounded bg-indigo-950/80 text-indigo-300 border border-indigo-800/80">SSMS</span>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
           {/* Center: Current Active View Indicator */}
           <div className="hidden md:flex items-center gap-2">
             <span className="text-xs font-medium text-slate-400">Current View:</span>
-            <span className="text-xs font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-full shadow-2xs">
+            <span className="text-xs font-bold text-indigo-300 bg-indigo-950/80 border border-indigo-800/80 px-3 py-1 rounded-full shadow-2xs">
               {pageTitles[activeTab] || 'Talent Discovery'}
             </span>
           </div>
@@ -97,17 +97,17 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
               <div className="flex items-center gap-2.5">
                 <div 
                   onClick={() => setActiveTab('profile')}
-                  className="flex items-center gap-2 p-1.5 pr-3 rounded-full border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 transition cursor-pointer"
+                  className="flex items-center gap-2 p-1.5 pr-3 rounded-full border border-slate-750 hover:border-indigo-500 hover:bg-slate-800/80 transition cursor-pointer"
                   title="View Your Profile"
                 >
                   <img
                     src={user.avatar || `https://api.dicebear.com/7.x/bottts/svg?seed=${user.name}`}
                     alt={user.name}
-                    className="w-7 h-7 rounded-full object-cover ring-1 ring-slate-200"
+                    className="w-7 h-7 rounded-full object-cover ring-1 ring-slate-700"
                   />
                   <div className="text-left hidden sm:block">
-                    <div className="text-xs font-bold text-slate-900 leading-tight truncate max-w-[120px]">{user.name}</div>
-                    <span className={`inline-block text-[9px] font-semibold uppercase px-1 py-0.1 rounded border ${roleColors[user.role] || 'bg-slate-100 text-slate-700'}`}>
+                    <div className="text-xs font-bold text-white leading-tight truncate max-w-[120px]">{user.name}</div>
+                    <span className={`inline-block text-[9px] font-semibold uppercase px-1 py-0.1 rounded border ${roleColors[user.role] || 'bg-slate-800 text-slate-300'}`}>
                       {user.role}
                     </span>
                   </div>
@@ -115,7 +115,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
 
                 <button
                   onClick={logout}
-                  className="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-rose-50 hover:text-rose-600 text-slate-600 text-xs font-semibold flex items-center gap-1.5 transition border border-slate-200"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800/80 hover:bg-rose-950/50 hover:text-rose-400 text-slate-300 text-xs font-semibold flex items-center gap-1.5 transition border border-slate-700"
                   title="Sign out to Login screen"
                 >
                   <LogOut className="w-3.5 h-3.5" />
@@ -126,7 +126,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenDashboard, onOpe
               <div className="flex items-center gap-1.5">
                 <button
                   onClick={() => onOpenAuth('login')}
-                  className="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1 border border-slate-700"
                 >
                   <LogIn className="w-3.5 h-3.5" />
                   <span>Sign In</span>
