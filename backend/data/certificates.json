@@ -1,0 +1,131 @@
+[
+  {
+    "id": "cert-1",
+    "student_id": "student-1",
+    "student_name": "Alex Chen",
+    "student_srn": "PES2UG22CS042",
+    "title": "AWS Certified Solutions Architect - Associate",
+    "issuer": "Amazon Web Services",
+    "issue_date": "2025-08-15",
+    "credential_url": "https://aws.amazon.com/verification/AWS-SAA-839211",
+    "certificate_type": "Professional",
+    "skills_covered": [
+      "Docker",
+      "FastAPI",
+      "System Design"
+    ],
+    "status": "verified",
+    "reviewer_notes": "Official credential ID checked and validated on AWS public badge portal. Excellent accomplishment.",
+    "reviewed_by": "Dr. Ramesh Sharma",
+    "reviewed_at": "2025-08-20",
+    "created_at": "2026-11-23T13:49:24.442062",
+    "_id": "cert-1"
+  },
+  {
+    "id": "cert-2",
+    "student_id": "student-1",
+    "student_name": "Alex Chen",
+    "student_srn": "PES2UG22CS042",
+    "title": "Deep Learning Specialization (5 Courses)",
+    "issuer": "DeepLearning.AI / Coursera",
+    "issue_date": "2025-11-10",
+    "credential_url": "https://coursera.org/verify/specialization/DL-SPECIAL-9912",
+    "certificate_type": "Course",
+    "skills_covered": [
+      "Python",
+      "PyTorch"
+    ],
+    "status": "verified",
+    "reviewer_notes": "Certificate verified via Coursera authentic token URL.",
+    "reviewed_by": "Prof. Ananya Iyer",
+    "reviewed_at": "2025-11-14",
+    "created_at": "2026-11-23T13:49:24.445061",
+    "_id": "cert-2"
+  },
+  {
+    "id": "cert-3",
+    "student_id": "student-2",
+    "student_name": "Priya Patel",
+    "student_srn": "PES2UG22IS118",
+    "title": "Google UX Design Professional Certificate",
+    "issuer": "Google",
+    "issue_date": "2025-07-22",
+    "credential_url": "https://coursera.org/verify/professional-cert/GOOGLE-UX-4821",
+    "certificate_type": "Professional",
+    "skills_covered": [
+      "Figma",
+      "UI/UX Design"
+    ],
+    "status": "verified",
+    "reviewer_notes": "Comprehensive 7-course sequence confirmed with verified portfolio artifacts.",
+    "reviewed_by": "Dr. Ramesh Sharma",
+    "reviewed_at": "2025-07-28",
+    "created_at": "2026-11-23T13:49:24.446063",
+    "_id": "cert-3"
+  },
+  {
+    "id": "cert-4",
+    "student_id": "student-3",
+    "student_name": "Marcus Johnson",
+    "student_srn": "PES2UG23AI089",
+    "title": "Machine Learning with Python & Scikit-Learn",
+    "issuer": "Stanford Online",
+    "issue_date": "2026-01-18",
+    "credential_url": "https://online.stanford.edu/verify/ML-STANFORD-2026",
+    "certificate_type": "Course",
+    "skills_covered": [
+      "Python",
+      "Scikit-learn"
+    ],
+    "status": "pending",
+    "reviewer_notes": null,
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "created_at": "2026-11-23T13:49:24.448060",
+    "_id": "cert-4"
+  },
+  {
+    "id": "cert-5",
+    "student_id": "student-5",
+    "student_name": "Rahul Verma",
+    "student_srn": "PES2UG23CS201",
+    "title": "Full Stack Web Developer Bootcamp",
+    "issuer": "Udemy Academy",
+    "issue_date": "2026-02-01",
+    "credential_url": "https://udemy.com/certificate/UC-99182312",
+    "certificate_type": "Course",
+    "skills_covered": [
+      "JavaScript",
+      "Node.js",
+      "MongoDB"
+    ],
+    "status": "pending",
+    "reviewer_notes": null,
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "created_at": "2026-11-23T13:49:24.450060",
+    "_id": "cert-5"
+  },
+  {
+    "id": "cert-6",
+    "student_id": "student-4",
+    "student_name": "Sarah Al-Mansoor",
+    "student_srn": "PES2UG22EC055",
+    "title": "ARM Cortex-M Embedded Systems Engineering",
+    "issuer": "ARM Education Program",
+    "issue_date": "2025-09-12",
+    "credential_url": "https://arm.com/verify/cert/ARM-M4-883",
+    "certificate_type": "Professional",
+    "skills_covered": [
+      "C++",
+      "Embedded Systems",
+      "IoT"
+    ],
+    "status": "verified",
+    "reviewer_notes": "Lab hardware evaluation passed and verified.",
+    "reviewed_by": "Dr. Ramesh Sharma",
+    "reviewed_at": "2025-09-18",
+    "created_at": "2026-11-23T13:49:24.452061",
+    "_id": "cert-6"
+  }
+]

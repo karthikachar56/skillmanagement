@@ -1,0 +1,492 @@
+[
+  {
+    "id": "student-1",
+    "email": "alex.chen@campus.edu",
+    "name": "Alex Chen",
+    "role": "student",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=faces",
+    "department": "Computer Science & Engineering",
+    "semester": 6,
+    "srn": "PES2UG22CS042",
+    "bio": "Passionate about building scalable backends and AI systems.",
+    "github_url": "https://github.com/alexchen-dev",
+    "linkedin_url": "https://linkedin.com/in/alexchen",
+    "portfolio_url": "https://alexchen.dev",
+    "available_for_collaboration": true,
+    "profile_views": 155,
+    "skills": [
+      {
+        "name": "Python",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 8
+      },
+      {
+        "name": "FastAPI",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 6
+      },
+      {
+        "name": "React",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": true,
+        "endorsements": 5
+      },
+      {
+        "name": "Docker",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 3
+      },
+      {
+        "name": "PyTorch",
+        "category": "data_ai",
+        "proficiency": "intermediate",
+        "verified": true,
+        "endorsements": 4
+      },
+      {
+        "name": "System Design",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 2
+      },
+      {
+        "name": "Leadership",
+        "category": "non_technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 7
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-1",
+        "title": "Agentic Campus Assistant",
+        "description": "Multi-agent autonomous scheduling and query engine using FastAPI and LangChain with vector search over campus syllabi.",
+        "skills_used": [
+          "Python",
+          "FastAPI",
+          "PyTorch",
+          "Docker"
+        ],
+        "live_url": "https://agentic-campus.demo.app",
+        "github_url": "https://github.com/alexchen-dev/campus-agent",
+        "role": "Lead System Architect",
+        "date": "Oct 2025"
+      },
+      {
+        "id": "proj-2",
+        "title": "Realtime Code Collab",
+        "description": "Browser-based collaborative code editor with operational transforms and WebSockets for paired programming.",
+        "skills_used": [
+          "React",
+          "FastAPI",
+          "Docker"
+        ],
+        "live_url": "https://code-collab-realtime.app",
+        "github_url": "https://github.com/alexchen-dev/code-collab",
+        "role": "Full Stack Engineer",
+        "date": "Jan 2026"
+      }
+    ],
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.409056",
+    "_id": "student-1",
+    "whatsapp": "+91 98765 12345",
+    "phone": "+91 98765 12345",
+    "title": "Distributed Systems & FastAPI Specialist"
+  },
+  {
+    "id": "student-2",
+    "email": "priya.patel@campus.edu",
+    "name": "Priya Patel",
+    "role": "student",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces",
+    "department": "Information Science & Engineering",
+    "semester": 6,
+    "srn": "PES2UG22IS118",
+    "bio": "Product designer and mobile application engineer. I turn complex logic into intuitive user experiences and silky-smooth micro-interactions.",
+    "github_url": "https://github.com/priyapatel-ui",
+    "linkedin_url": "https://linkedin.com/in/priyapatel-design",
+    "portfolio_url": "https://priyapatel.design",
+    "available_for_collaboration": true,
+    "profile_views": 201,
+    "skills": [
+      {
+        "name": "Figma",
+        "category": "design",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 11
+      },
+      {
+        "name": "UI/UX Design",
+        "category": "design",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 9
+      },
+      {
+        "name": "Kotlin",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": true,
+        "endorsements": 4
+      },
+      {
+        "name": "Flutter",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 5
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 8
+      },
+      {
+        "name": "Public Speaking",
+        "category": "non_technical",
+        "proficiency": "advanced",
+        "verified": false,
+        "endorsements": 4
+      },
+      {
+        "name": "stich",
+        "category": "design",
+        "proficiency": "advanced",
+        "verified": false,
+        "endorsements": 0
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-3",
+        "title": "Pulse Fitness App",
+        "description": "Clean, accessible mobile companion app featuring health metric tracking, gamified goals, and offline caching.",
+        "skills_used": [
+          "Figma",
+          "Kotlin",
+          "UI/UX Design"
+        ],
+        "live_url": "https://pulse-fit.preview.app",
+        "github_url": "https://github.com/priyapatel-ui/pulse-fitness",
+        "role": "Lead Mobile & UI Designer",
+        "date": "Nov 2025"
+      }
+    ],
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.411058",
+    "_id": "student-2",
+    "whatsapp": "+919845012345",
+    "phone": "+91 98450 12345"
+  },
+  {
+    "id": "student-3",
+    "email": "marcus.johnson@campus.edu",
+    "name": "Marcus Johnson",
+    "role": "student",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=goouaax",
+    "department": "Artificial Intelligence & Data Science",
+    "semester": 4,
+    "srn": "PES2UG23AI089",
+    "bio": "Data enthusiast working on computer vision, NLP transformers, and predictive modeling. Seeking backend and frontend partners for upcoming AI challenges.",
+    "github_url": "https://github.com/marcusj-ai",
+    "linkedin_url": "https://linkedin.com/in/marcusjohnson-ds",
+    "portfolio_url": "https://marcus.ai-portfolio.com",
+    "available_for_collaboration": true,
+    "profile_views": 106,
+    "skills": [
+      {
+        "name": "Python",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 7
+      },
+      {
+        "name": "Scikit-learn",
+        "category": "data_ai",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 5
+      },
+      {
+        "name": "TensorFlow",
+        "category": "data_ai",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 3
+      },
+      {
+        "name": "SQL",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": true,
+        "endorsements": 6
+      },
+      {
+        "name": "Data Visualization",
+        "category": "data_ai",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 2
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-4",
+        "title": "Automated Medical X-Ray Screener",
+        "description": "Deep Convolutional Neural Network pipeline achieving 94.2% ROC-AUC in detecting pulmonary consolidations on public datasets.",
+        "skills_used": [
+          "Python",
+          "TensorFlow",
+          "Scikit-learn"
+        ],
+        "live_url": "https://huggingface.co/spaces/marcus-ai/xray-screener",
+        "github_url": "https://github.com/marcusj-ai/med-screener",
+        "role": "ML Research Contributor",
+        "date": "Dec 2025"
+      }
+    ],
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.414061",
+    "_id": "student-3",
+    "whatsapp": "+14155552671",
+    "phone": "+1 (415) 555-2671",
+    "title": ""
+  },
+  {
+    "id": "student-4",
+    "email": "sarah.mansoor@campus.edu",
+    "name": "Sarah Al-Mansoor",
+    "role": "student",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=faces",
+    "department": "Electronics & Communication Engineering",
+    "semester": 6,
+    "srn": "PES2UG22EC055",
+    "bio": "Embedded systems tinkerer and hardware IoT engineer. Specializing in low-power microcontrollers, MQTT telemetry, and edge computing.",
+    "github_url": "https://github.com/sarah-embedded",
+    "linkedin_url": "https://linkedin.com/in/sarahmansoor",
+    "portfolio_url": "https://sarah-iot.tech",
+    "available_for_collaboration": false,
+    "profile_views": 75,
+    "skills": [
+      {
+        "name": "C++",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 9
+      },
+      {
+        "name": "Embedded Systems",
+        "category": "core",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 8
+      },
+      {
+        "name": "IoT",
+        "category": "technical",
+        "proficiency": "advanced",
+        "verified": true,
+        "endorsements": 6
+      },
+      {
+        "name": "Arduino",
+        "category": "core",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 4
+      },
+      {
+        "name": "Communication",
+        "category": "non_technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 3
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-5",
+        "title": "LoRaWAN Smart Agrisensor Mesh",
+        "description": "Solar-powered telemetry node mesh transmitting soil salinity and microclimate stats over 8km without cellular towers.",
+        "skills_used": [
+          "C++",
+          "Embedded Systems",
+          "IoT"
+        ],
+        "live_url": "https://agri-mesh.iot.io",
+        "github_url": "https://github.com/sarah-embedded/agri-lora",
+        "role": "Firmware & Circuit Lead",
+        "date": "Aug 2025"
+      }
+    ],
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.417067",
+    "_id": "student-4",
+    "whatsapp": "+919900112233",
+    "phone": "+91 99001 12233"
+  },
+  {
+    "id": "student-5",
+    "email": "rahul.verma@campus.edu",
+    "name": "Rahul Verma",
+    "role": "student",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces",
+    "department": "Computer Science & Engineering",
+    "semester": 4,
+    "srn": "PES2UG23CS201",
+    "bio": "Curious sophomore eager to join hackathon teams. Building modern web stacks with Node, React, and MongoDB.",
+    "github_url": "https://github.com/rahulverma-web",
+    "linkedin_url": "https://linkedin.com/in/rahulverma",
+    "portfolio_url": "https://rahulverma.dev",
+    "available_for_collaboration": true,
+    "profile_views": 52,
+    "skills": [
+      {
+        "name": "JavaScript",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": true,
+        "endorsements": 4
+      },
+      {
+        "name": "Node.js",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 2
+      },
+      {
+        "name": "MongoDB",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 3
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "technical",
+        "proficiency": "intermediate",
+        "verified": false,
+        "endorsements": 1
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-6",
+        "title": "Campus Club Event Hub",
+        "description": "Event ticketing and attendance QR tracker used by 3 campus engineering clubs.",
+        "skills_used": [
+          "JavaScript",
+          "Node.js",
+          "MongoDB"
+        ],
+        "live_url": "https://campus-hub.vercel.app",
+        "github_url": "https://github.com/rahulverma-web/event-hub",
+        "role": "Full Stack Developer",
+        "date": "Jan 2026"
+      }
+    ],
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.421061",
+    "_id": "student-5",
+    "whatsapp": "+919811223344",
+    "phone": "+91 98112 23344"
+  },
+  {
+    "id": "faculty-1",
+    "email": "dr.sharma@campus.edu",
+    "name": "Dr. Ramesh Sharma",
+    "role": "faculty",
+    "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=faces",
+    "department": "Computer Science & Engineering",
+    "title": "Professor & Head of Department",
+    "bio": "Mentoring high-impact student research groups, verifying technical achievements, and connecting promising talents with premier research labs.",
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.425058",
+    "_id": "faculty-1",
+    "whatsapp": "+919880011223",
+    "phone": "+91 98800 11223"
+  },
+  {
+    "id": "faculty-2",
+    "email": "dr.ananya@campus.edu",
+    "name": "Prof. Ananya Iyer",
+    "role": "faculty",
+    "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=faces",
+    "department": "Artificial Intelligence & Data Science",
+    "title": "Associate Professor & Hackathon Advisor",
+    "bio": "Guiding AI innovation projects and evaluating technical certificates and hackathon proof of works.",
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.428056",
+    "_id": "faculty-2",
+    "whatsapp": "+919876500000",
+    "phone": "+91 98765 00000"
+  },
+  {
+    "id": "recruiter-1",
+    "email": "recruiter@techcorp.io",
+    "name": "David Miller",
+    "role": "recruiter",
+    "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=faces",
+    "organization": "Nexus Tech Innovation Labs",
+    "title": "Lead Talent Scout",
+    "bio": "Sourcing passionate student creators and engineers for high-impact summer research internships and venture-backed fellowships.",
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.432058",
+    "_id": "recruiter-1",
+    "whatsapp": "+14155550199",
+    "phone": "+1 (415) 555-0199"
+  },
+  {
+    "id": "admin-1",
+    "email": "admin@skillbridge.edu",
+    "name": "SkillBridge Central Admin",
+    "role": "admin",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces",
+    "organization": "University Skills & Placements Directorate",
+    "title": "Platform Administrator",
+    "bio": "Managing campus-wide student talent directory, faculty verification workflows, and cross-departmental analytics.",
+    "password_hash": "$2b$12$cgIUyE9ORI52tcdfHkLa9OsOhjxGyCzTTnUdDT7WAdZJe5xFsNCVC",
+    "created_at": "2026-11-23T13:49:24.436061",
+    "_id": "admin-1",
+    "whatsapp": "+919876500000",
+    "phone": "+91 98765 00000"
+  },
+  {
+    "id": "1d29b335-38a3-4d42-89b2-026c2e8f35cd",
+    "email": "achark659@gmail.com",
+    "password_hash": "$2b$12$.neLOyr84akVTkd/4jtpXuOzG68i6G6fIMFtKl7egxslWg1.CJ5tO",
+    "name": "k",
+    "role": "student",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=k",
+    "department": "Computer Science & Engineering",
+    "semester": 4,
+    "srn": "sw123456789",
+    "bio": "Hello, I am k on SkillBridge.",
+    "phone": "7411490271",
+    "whatsapp": "7411490271",
+    "skills": [],
+    "projects": [],
+    "available_for_collaboration": true,
+    "profile_views": 3,
+    "organization": null,
+    "title": null,
+    "created_at": "2026-11-23T18:05:26.503629",
+    "_id": "1d29b335-38a3-4d42-89b2-026c2e8f35cd"
+  }
+]

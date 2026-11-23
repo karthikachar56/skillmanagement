@@ -1,0 +1,67 @@
+[
+  {
+    "id": "opp-1",
+    "title": "National Smart Campus AI Hackathon 2026",
+    "organization": "University Innovation Council & Nexus",
+    "posted_by_id": "recruiter-1",
+    "posted_by_name": "David Miller",
+    "type": "hackathon",
+    "description": "48-hour intensive hackathon aimed at building agentic automation for university administration, student wellness, and laboratory equipment sharing. Teams of 3-4 required.",
+    "required_skills": [
+      "Python",
+      "React",
+      "UI/UX Design",
+      "PyTorch",
+      "FastAPI"
+    ],
+    "stipend_prize": "$3,000 Cash Prize + Incubation Grant",
+    "deadline": "2026-04-15",
+    "location": "Main Auditorium / Hybrid",
+    "applications_count": 8,
+    "created_at": "2026-02-01",
+    "_id": "opp-1"
+  },
+  {
+    "id": "opp-2",
+    "title": "Full-Stack AI Summer Research Intern",
+    "organization": "Nexus Tech Innovation Labs",
+    "posted_by_id": "recruiter-1",
+    "posted_by_name": "David Miller",
+    "type": "internship",
+    "description": "Join our applied intelligence lab for a 12-week paid fellowship. Work directly on edge-accelerated models, web interfaces, and high-concurrency systems.",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker",
+      "React",
+      "System Design"
+    ],
+    "stipend_prize": "$1,200 / Month + Mentorship",
+    "deadline": "2026-03-31",
+    "location": "Bengaluru Innovation Hub / Hybrid",
+    "applications_count": 14,
+    "created_at": "2026-02-05",
+    "_id": "opp-2"
+  },
+  {
+    "id": "opp-3",
+    "title": "Open Source Mobile App: Campus Carpooling",
+    "organization": "Student Developer Society",
+    "posted_by_id": "student-1",
+    "posted_by_name": "Alex Chen",
+    "type": "project",
+    "description": "Student-led initiative to build a safe, campus-verified carpooling and ride-sharing mobile app for university commuters.",
+    "required_skills": [
+      "Kotlin",
+      "Flutter",
+      "Figma",
+      "Node.js"
+    ],
+    "stipend_prize": "Open Source Project Credits",
+    "deadline": "2026-05-01",
+    "location": "Campus / Remote",
+    "applications_count": 5,
+    "created_at": "2026-02-12",
+    "_id": "opp-3"
+  }
+]
