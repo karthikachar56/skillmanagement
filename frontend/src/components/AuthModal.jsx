@@ -18,7 +18,7 @@ import {
 import { WhatsAppIcon } from './BrandIcons';
 
 export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
-  const { login, register, demoUsers, switchDemoUser } = useAuth();
+  const { login, register } = useAuth();
   const [mode, setMode] = useState(initialMode); // 'login' or 'signup'
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -77,18 +77,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
       onClose();
     } catch (err) {
       setError(err.message || 'Registration failed. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleQuickDemoLogin = async (userId) => {
-    setLoading(true);
-    try {
-      await switchDemoUser(userId);
-      onClose();
-    } catch (err) {
-      setError('Quick login failed');
     } finally {
       setLoading(false);
     }
@@ -190,29 +178,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               <span>{loading ? 'Signing in...' : 'Sign In to SkillBridge'}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
-
-            {/* Quick Demo Logins Section */}
-            <div className="pt-3 border-t border-slate-100 space-y-2">
-              <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block text-center">
-                Or Instant 1-Click Demo Logins:
-              </span>
-              <div className="grid grid-cols-2 gap-1.5">
-                {demoUsers.slice(0, 4).map((du) => (
-                  <button
-                    key={du.id}
-                    type="button"
-                    onClick={() => handleQuickDemoLogin(du.id)}
-                    className="p-2 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:border-indigo-200 border border-slate-200 text-left transition flex items-center gap-2 text-xs"
-                  >
-                    <img src={du.avatar} alt={du.name} className="w-6 h-6 rounded-full object-cover shrink-0" />
-                    <div className="truncate min-w-0">
-                      <div className="font-bold text-slate-900 truncate leading-tight">{du.name.split(' ')[0]}</div>
-                      <span className="text-[9px] uppercase font-semibold text-slate-400">{du.role}</span>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
           </form>
         ) : (
           /* Sign Up Form */

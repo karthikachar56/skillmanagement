@@ -20,7 +20,7 @@ import {
 import { WhatsAppIcon } from '../components/BrandIcons';
 
 export default function LoginPage() {
-  const { login, register, demoUsers, switchDemoUser } = useAuth();
+  const { login, register } = useAuth();
   const [mode, setMode] = useState('login'); // 'login' or 'signup'
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -75,18 +75,6 @@ export default function LoginPage() {
       });
     } catch (err) {
       setError(err.message || 'Registration failed. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleDemoClick = async (userId) => {
-    setLoading(true);
-    setError('');
-    try {
-      await switchDemoUser(userId);
-    } catch (err) {
-      setError('Quick login failed. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -236,37 +224,6 @@ export default function LoginPage() {
                   <span>{loading ? 'Authenticating...' : 'Sign In to Campus Network'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
-
-                {/* Quick 1-Click Demo Logins */}
-                <div className="pt-4 border-t border-slate-100 space-y-2.5">
-                  <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block text-center">
-                    Instant 1-Click Persona Logins:
-                  </span>
-                  <div className="grid grid-cols-2 gap-2">
-                    {demoUsers.map((du) => (
-                      <button
-                        key={du.id}
-                        type="button"
-                        onClick={() => handleDemoClick(du.id)}
-                        className="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-left transition flex items-center gap-2 text-xs group"
-                      >
-                        <img
-                          src={du.avatar}
-                          alt={du.name}
-                          className="w-7 h-7 rounded-full object-cover shrink-0 ring-1 ring-slate-200"
-                        />
-                        <div className="truncate min-w-0">
-                          <div className="font-bold text-slate-900 truncate leading-tight group-hover:text-indigo-600">
-                            {du.name.split(' ')[0]}
-                          </div>
-                          <span className="text-[9px] uppercase font-bold text-slate-400">
-                            {du.role}
-                          </span>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
               </form>
             ) : (
               /* TAB 2: SIGN UP FORM */
